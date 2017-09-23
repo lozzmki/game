@@ -7,7 +7,7 @@
 //one tile
 struct DTileData {
 	bool m_bIsCollidable;
-	std::string m_s
+	std::string m_sTextureName;
 };
 
 class Terrain :public cocos2d::Object {
