@@ -149,8 +149,10 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="Game\GameScene.cpp" />
     <ClCompile Include="Game\ObjectLayer.cpp" />
     <ClCompile Include="Game\Objects\GameObject.cpp" />
+    <ClCompile Include="Game\Scene\Terrain.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>

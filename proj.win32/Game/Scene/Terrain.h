@@ -10,14 +10,18 @@ struct DTileData {
 	std::string m_sTextureName;
 };
 
-class Terrain :public cocos2d::Object {
+class Terrain : public cocos2d::Node{
 public:
-	CREATE_FUNC(Terrain);
+	static Terrain* createTerrain(std::string sPath);
 
-	virtual bool init();
+	const DTileData& getTile(cocos2d::Vec2);
 
 	static std::map<int, DTileData> ms_mapTileData;
 private:
+
+	char * m_arrMapData;
+	cocos2d::Size m_vSize;
+	cocos2d::Size m_vTileSize;
 };
 
 #endif

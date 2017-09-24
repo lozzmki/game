@@ -23,6 +23,8 @@
     </ClCompile>
     <ClCompile Include="Game\Objects\GameObject.cpp" />
     <ClCompile Include="Game\ObjectLayer.cpp" />
+    <ClCompile Include="Game\Scene\Terrain.cpp" />
+    <ClCompile Include="Game\GameScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
