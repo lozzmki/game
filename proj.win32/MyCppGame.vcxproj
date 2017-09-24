@@ -117,7 +117,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>$(EngineRoot)external;$(EngineRoot)cocos\audio\include;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=0;CC_ENABLE_BOX2D_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>
@@ -152,6 +152,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="Game\GameScene.cpp" />
     <ClCompile Include="Game\ObjectLayer.cpp" />
     <ClCompile Include="Game\Objects\GameObject.cpp" />
+    <ClCompile Include="Game\Objects\Player.cpp" />
     <ClCompile Include="Game\Scene\Terrain.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -162,6 +163,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="Game\ObjectLayer.h" />
     <ClInclude Include="Game\Objects\Entity.h" />
     <ClInclude Include="Game\Objects\GameObject.h" />
+    <ClInclude Include="Game\Objects\Player.h" />
     <ClInclude Include="Game\Objects\Projectile.h" />
     <ClInclude Include="Game\Scene\Terrain.h" />
     <ClInclude Include="main.h" />

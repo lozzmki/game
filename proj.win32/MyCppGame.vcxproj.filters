@@ -25,6 +25,7 @@
     <ClCompile Include="Game\ObjectLayer.cpp" />
     <ClCompile Include="Game\Scene\Terrain.cpp" />
     <ClCompile Include="Game\GameScene.cpp" />
+    <ClCompile Include="Game\Objects\Player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -42,6 +43,7 @@
     <ClInclude Include="Game\Objects\Entity.h" />
     <ClInclude Include="Game\Objects\Projectile.h" />
     <ClInclude Include="Game\Scene\Terrain.h" />
+    <ClInclude Include="Game\Objects\Player.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">
